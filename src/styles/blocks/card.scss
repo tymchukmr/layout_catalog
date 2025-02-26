@@ -4,7 +4,9 @@
   border: 1px solid #f3f3f3;
   border-radius: 5px;
   background: $bg-color;
-
+  transform: scale(1);
+  transition: $transition;
+  
   &__title {
     margin: 0;
     font-size: 12px;
@@ -15,11 +17,13 @@
     height: 36px;
     width: 166px;
     color: $main-accent;
+
+
   }
 
   &:hover {
     transform: scale(1.2);
-    transition: $transition;
+    transition: transform $transition;
     .card__title {
       color: #34568b;
       transition: $transition;
